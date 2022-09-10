@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 //Simulador interactivo
+=======
+//Desafio entregable simulador interactivo
+
+>>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
 function bienvenida(){
     alert('Bienvenido a Calabozo del cómic');
     let usuario = prompt('Ingrese su usuario');
@@ -6,6 +11,10 @@ function bienvenida(){
         usuario = prompt('Ingrese su usuario')
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
 function catalogoComics(){
     let comic;
     do {
@@ -23,6 +32,10 @@ function catalogoComics(){
             return 'The walking dead #25';
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
 function precio(comic){
     if (comic ==='Ultimate spiderman #65'){
     return 320;
@@ -34,6 +47,10 @@ function precio(comic){
         return 400;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
 function cobro(comic, precio){
     alert('El comic seleccionado es: '+comic+'.\nEl precio a abonar es de $ '+precio+'.');
 }
