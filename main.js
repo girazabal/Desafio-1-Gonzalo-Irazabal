@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-//Simulador interactivo
-=======
-//Desafio entregable simulador interactivo
-
->>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
 function bienvenida(){
     alert('Bienvenido a Calabozo del cómic');
     let usuario = prompt('Ingrese su usuario');
@@ -11,52 +5,29 @@ function bienvenida(){
         usuario = prompt('Ingrese su usuario')
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
-function catalogoComics(){
-    let comic;
-    do {
-    comic = prompt('Ingrese el comic que desee adquirir: \n1-Ultimate spiderman #65\n2-Batman Killing joke\n3-X-men Origins\n4-The walking dead #25');
-    }while (comic!=1 && comic!=2 && comic!=3 && comic!= 4);
-    console.log(comic)
-    switch(comic){
-        case '1':
-            return 'Ultimate spiderman #65';
-        case '2':
-            return 'Batman Killing joke';
-        case '3':
-            return 'X-men Origins';
-        case '4':
-            return 'The walking dead #25';
-    }
-}
-<<<<<<< HEAD
-=======
-
->>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
-function precio(comic){
-    if (comic ==='Ultimate spiderman #65'){
-    return 320;
-    }else if (comic ==='Batman Killing joke'){
-        return 450;
-    }else if(comic ==='X-men Origins'){
-        return 415;
-    }else if(comic === 'The walking dead #25'){
-        return 400;
-    }
-}
-<<<<<<< HEAD
-=======
-
->>>>>>> 67b6fd8efe3b291fa827f245b871b9e8a870a21d
-function cobro(comic, precio){
-    alert('El comic seleccionado es: '+comic+'.\nEl precio a abonar es de $ '+precio+'.');
-}
 bienvenida();
-precio();
-comic = catalogoComics();
-let precioComic = precio(comic);
-cobro(comic, precioComic);
-console.log(precioComic);
+
+class Comic{
+    constructor(titulo, precio){
+        this.titulo = titulo;
+        this.precio = Number(precio);
+        this.vendido = false;
+    }
+    vender(){
+        this.vendido = true;
+    }
+    mostrar(){
+    return this.titulo + this.precio;
+    }
+}
+const comics = [];
+const comic1 = new Comic('Ultimate spiderman #65',360);
+const comic2 = new Comic('Batman: The killing joke', 420);
+const comic3 = new Comic('X-men: Origins', 415);
+const comic4 = new Comic('The walking dead #25', 400);
+
+comics.push(comic1, comic2, comic3, comic4);
+
+
+console.log(comics);
+
